@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Exercício 5 — Fundo com Transparência</title>
+<style>
+    .overlay {
+        position: relative;
+        width: 600px;
+        height: 400px;
+        background-image: url('https://picsum.photos/800/600');
+        background-size: cover;
+        background-position: center;
+        color: white;
+        margin: 50px auto;
+        font-family: Arial, sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .overlay::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-color: rgba(0, 0, 0, 0.4); /* camada semitransparente */
+    }
+
+    .overlay h2 {
+        position: relative;
+        z-index: 1; /* garante que o texto fique sobre o overlay */
+    }
+</style>
+</head>
+<body>
+    <div class="overlay">
+        <h2>Texto com Fundo Semitransparente</h2>
+    </div>
+</body>
+</html>

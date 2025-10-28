@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Exercício 4 — Parallax Simples</title>
+<style>
+    section {
+        height: 100vh;
+        background-image: url('https://picsum.photos/1600/900');
+        background-attachment: fixed; /* efeito parallax simples */
+        background-size: cover;
+        background-position: center;
+        color: white;
+        font-size: 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-shadow: 2px 2px 4px black;
+    }
+
+    p {
+        padding: 40px;
+        text-align: justify;
+        font-family: Arial, sans-serif;
+        max-width: 800px;
+        margin: 40px auto;
+    }
+</style>
+</head>
+<body>
+    <section>Fundo Parallax Simples</section>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent porta justo nec elit cursus, 
+       sed egestas magna pretium. Vestibulum et magna in urna convallis tincidunt. 
+       Aenean id sodales lorem. Donec tincidunt massa et ligula elementum vehicula.</p>
+</body>
+</html>
